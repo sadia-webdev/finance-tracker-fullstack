@@ -53,9 +53,7 @@ if (process.env.NODE_ENV === "production") {
 
   // serve index.html for all unknown routes
   app.get("*", (req, res) => {
-    res.sendFile(
-      path.join(__dirname, "..", "../frontend", "dist", "index.html"),
-    );
+    res.sendFile(path.join(__dirname, "../frontend/dist/index.html"));
   });
 }
 
