@@ -1,7 +1,8 @@
 import axios from "axios";
 import useAuthStore from "../store/AuthStore";
 
-const BASE_URL = "http://localhost:4000/api";
+
+const BASE_URL = "https://finance-tracker-fullstack.onrender.com/api";
 
 const api = axios.create({
   baseURL: BASE_URL,
